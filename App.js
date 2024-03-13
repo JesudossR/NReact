@@ -2,25 +2,58 @@ import React from "react";
 import  ReactDOM  from "react-dom/client";
 
 // const heading=React.createElement("h1",{className:"headermae"},"heading 1");
-const Heading=()=>{
+const Title=()=>{
+    <a href="/">
+        <img src="#" alt="logo" />
+    </a> 
+}
+
+const Header=()=>{
     return (
-    <h1 id="h1" key="h1">hello jesu</h1>
+    <>
+    <div >
+        <Title/>
+    <div className="nav-lists">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Cart</li>
+        </ul>
+        </div>
+    </div>
+           
+    </>
     );
 };
 
-const Heading2=()=>{
+const Body=()=>{
+    return (
+    <h1>Body</h1>
+    );
+};
+
+const Footer=()=>{
+    return (
+    <h1>Footer</h1>
+    );
+};
+
+const AppLayout=()=>{
     return (
     <>
     {/* <Heading/> one way */}
     {/* {Heading()} second way because internally it is a js function */}
-    <h1 id="h1" key="h1">hellojs jesu</h1>
+    <Header/>
+    <Body/>
+    <Footer/>
     </> 
     );
 };
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Heading2/>);
+root.render(<AppLayout/>);
 
 
 
