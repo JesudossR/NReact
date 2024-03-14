@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content:space-between;
+    margin:10px;
+    border: 1px solid black;
+}
+.nav-lists ul{
+    list-style-type: none;
+    display: flex;
+}
+.nav-lists ul li{
+    padding: 10px;
+}

@@ -2,18 +2,18 @@ import React from "react";
 import  ReactDOM  from "react-dom/client";
 
 // const heading=React.createElement("h1",{className:"headermae"},"heading 1");
-const Title=()=>{
+const Title=()=>(
     <a href="/">
-        <img src="#" alt="logo" />
+        <img src="https://img.freepik.com/premium-vector/good-food-logo-design_79169-10.jpg?w=2000" width={100}/>
     </a> 
-}
+)
 
 const Header=()=>{
     return (
     <>
-    <div >
+    <div className="header">
         <Title/>
-    <div className="nav-lists">
+        <div className="nav-lists">
         <ul>
             <li>Home</li>
             <li>About</li>
@@ -21,15 +21,14 @@ const Header=()=>{
             <li>Cart</li>
         </ul>
         </div>
-    </div>
-           
+    </div>        
     </>
     );
 };
 
 const Body=()=>{
     return (
-    <h1>Body</h1>
+    <></>
     );
 };
 

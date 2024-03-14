@@ -1,2 +1,16 @@
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin: 10px;
+  display: flex;
+}
 
+.nav-lists ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-lists ul li {
+  padding: 10px;
+}
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
