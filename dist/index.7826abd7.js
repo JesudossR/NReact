@@ -3036,54 +3036,226 @@ const Header = ()=>{
     }, void 0, false);
 };
 _c1 = Header;
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+const restaurantList = [
+    {
+        "info": {
+            "id": "89583",
+            "name": "UBQ by Barbeque Nation",
+            "cloudinaryImageId": "xgj2cn4y2y8mtxisaplp",
+            "locality": "Thuraipakkam",
+            "areaName": "Thuraipakkam",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "North Indian",
+                "Barbecue",
+                "Biryani",
+                "Kebabs",
+                "Mughlai",
+                "Desserts"
+            ],
+            "avgRating": 4.1,
+            "parentId": "10804",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 5.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "34 mins",
+                "lastMileTravelString": "5.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-03-14 23:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {
+            "context": "seo-data-02e35171-e125-49ee-82ce-b2165e750ea8"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/ubq-by-barbeque-nation-thuraipakkam-chennai-89583",
+            "text": "RESTAURANT_MENU",
+            "type": "WEBLINK"
+        },
+        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+        "info": {
+            "id": "485445",
+            "name": "Chinese Wok",
+            "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+            "locality": "Old Mahabalipuram Road OMR",
+            "areaName": "Old Mahabalipuram Road OMR",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "Chinese",
+                "Asian",
+                "Tibetan",
+                "Desserts"
+            ],
+            "avgRating": 3.9,
+            "parentId": "61955",
+            "avgRatingString": "3.9",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 21,
+                "lastMileTravel": 4.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "21 mins",
+                "lastMileTravelString": "4.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-03-15 02:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {
+            "context": "seo-data-02e35171-e125-49ee-82ce-b2165e750ea8"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/chinese-wok-old-mahabalipuram-road-omr-chennai-485445",
+            "text": "RESTAURANT_MENU",
+            "type": "WEBLINK"
+        },
+        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    }
+];
+const RestaurantCard = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: restaurantList[0].info?.name
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 158,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 157,
+        columnNumber: 10
+    }, undefined);
 };
-_c2 = Body;
+_c2 = RestaurantCard;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 162,
+            columnNumber: 12
+        }, undefined)
+    }, void 0, false);
+};
+_c3 = Body;
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 27,
+        lineNumber: 165,
         columnNumber: 10
     }, undefined);
 };
-_c3 = Footer;
+_c4 = Footer;
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 33,
+                lineNumber: 171,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 34,
+                lineNumber: 172,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 35,
+                lineNumber: 173,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true);
 };
-_c4 = AppLayout;
+_c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 39,
+    lineNumber: 177,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2, _c3, _c4;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "Header");
-$RefreshReg$(_c2, "Body");
-$RefreshReg$(_c3, "Footer");
-$RefreshReg$(_c4, "AppLayout");
+$RefreshReg$(_c2, "RestaurantCard");
+$RefreshReg$(_c3, "Body");
+$RefreshReg$(_c4, "Footer");
+$RefreshReg$(_c5, "AppLayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
