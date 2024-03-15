@@ -13,4 +13,19 @@
 .nav-lists ul li {
   padding: 10px;
 }
+
+.body-list {
+  display: flex;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #000;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

@@ -11,3 +11,16 @@
 .nav-lists ul li{
     padding: 10px;
 }
+.body-list{
+    display:flex
+
+}
+.card img{
+    width:100%;
+}
+.card{
+    width: 200;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}

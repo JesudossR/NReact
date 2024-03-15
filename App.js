@@ -174,17 +174,30 @@ const restaurantList=[
     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     }]
 
-const RestaurantCard=()=>{
+const RestaurantCard=({name,costForTwo,cloudinaryImageId})=>{
+    // const {name,costForTwo}=res;
     return(
         <div className="card">
-            <h1>{restaurantList[0].info?.name}</h1>
+            <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId} />
+            <h4>{name}</h4>
+            <p>{costForTwo}</p>
         </div>
     )
 }
 
 const Body=()=>{
     return (
-    <><RestaurantCard/></>
+    <>
+    <div className="body-list">
+    {
+        restaurantList.map(res=>{
+            // console.log(res.info);
+           return <RestaurantCard  key={res.info.id} {...res.info}/>
+        })
+    }
+    </div>
+    
+    </>
     );
 };
 

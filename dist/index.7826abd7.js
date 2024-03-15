@@ -3184,29 +3184,58 @@ const restaurantList = [
         "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     }
 ];
-const RestaurantCard = ()=>{
+const RestaurantCard = ({ name, costForTwo, cloudinaryImageId })=>{
+    // const {name,costForTwo}=res;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: restaurantList[0].info?.name
-        }, void 0, false, {
-            fileName: "App.js",
-            lineNumber: 158,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 163,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: name
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 164,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: costForTwo
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 165,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 157,
+        lineNumber: 162,
         columnNumber: 10
     }, undefined);
 };
 _c2 = RestaurantCard;
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "body-list",
+            children: restaurantList.map((res)=>{
+                // console.log(res.info);
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                    ...res.info
+                }, res.info.id, false, {
+                    fileName: "App.js",
+                    lineNumber: 173,
+                    columnNumber: 16
+                }, undefined);
+            })
+        }, void 0, false, {
             fileName: "App.js",
-            lineNumber: 162,
-            columnNumber: 12
+            lineNumber: 170,
+            columnNumber: 5
         }, undefined)
     }, void 0, false);
 };
@@ -3216,7 +3245,7 @@ const Footer = ()=>{
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 165,
+        lineNumber: 180,
         columnNumber: 10
     }, undefined);
 };
@@ -3226,17 +3255,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 171,
+                lineNumber: 186,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 172,
+                lineNumber: 187,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 173,
+                lineNumber: 188,
                 columnNumber: 5
             }, undefined)
         ]
@@ -3246,7 +3275,7 @@ _c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 177,
+    lineNumber: 192,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;
