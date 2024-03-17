@@ -1,32 +1,9 @@
-import React from "react";
-import  ReactDOM  from "react-dom/client";
 
-// const heading=React.createElement("h1",{className:"headermae"},"heading 1");
-const Title=()=>(
-    <a href="/">
-        <img src="https://img.freepik.com/premium-vector/good-food-logo-design_79169-10.jpg?w=2000" width={100}/>
-    </a> 
-)
 
-const Header=()=>{
-    return (
-    <>
-    <div className="header">
-        <Title/>
-        <div className="nav-lists">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Cart</li>
-        </ul>
-        </div>
-    </div>        
-    </>
-    );
-};
+export const Img_url="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 
-const restaurantList=[
+
+export const restaurantList=[
     {
     "info": {
     "id": "89583",
@@ -173,57 +150,3 @@ const restaurantList=[
     },
     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     }]
-
-const RestaurantCard=({name,costForTwo,cloudinaryImageId})=>{
-    // const {name,costForTwo}=res;
-    return(
-        <div className="card">
-            <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId} />
-            <h4>{name}</h4>
-            <p>{costForTwo}</p>
-        </div>
-    )
-}
-
-const Body=()=>{
-    return (
-    <>
-    <div className="body-list">
-    {
-        restaurantList.map(res=>{
-            // console.log(res.info);
-           return <RestaurantCard  key={res.info.id} {...res.info}/>
-        })
-    }
-    </div>
-    
-    </>
-    );
-};
-
-const Footer=()=>{
-    return (
-    <h1>Footer</h1>
-    );
-};
-
-const AppLayout=()=>{
-    return (
-    <>
-    {/* <Heading/> one way */}
-    {/* {Heading()} second way because internally it is a js function */}
-    <Header/>
-    <Body/>
-    <Footer/>
-    </> 
-    );
-};
-
-const root=ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout/>);
-
-
-
-
-
