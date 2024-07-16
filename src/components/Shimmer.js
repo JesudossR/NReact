@@ -1,6 +1,8 @@
 const Shimmer = () => {
     return (
-        <h2>ui loading</h2>
+        <div className="restaurants-list">
+            <div className="shimmer-card"></div>
+       </div>
     )
 }
-export default Shimmer;
+export default Shimmer; 

@@ -15,6 +15,7 @@
 }
 
 .body-list {
+  flex-wrap: wrap;
   display: flex;
 }
 
@@ -27,5 +28,13 @@
   width: 200px;
   margin: 10px;
   padding: 10px;
+}
+
+.shimmer-card {
+  background-color: #d1d1d1;
+  border: 1px solid #000;
+  width: 150px;
+  height: 200px;
+  margin: 10px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

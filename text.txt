@@ -1,0 +1,16 @@
+1.Hooks
+
+hooks are just a normal function
+hooks are used for modularity,readability,reusability.
+we can also make custom hooks by our own with anyname
+hooks are the normal helper function
+customhooks are used for writing the logic in javascript and it returns the value it is not like the functional component
+
+2.Utilities-Util
+
+these are used for creating helper function or other customhooks to make the components good readability
+when using utilities it will be more easy to check the error whenever it occurs ,we dont want to search where we have written and we can directly check the utilities folder
+
+3.Function components
+
+it is a function which returns the jsx.

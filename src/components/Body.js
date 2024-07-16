@@ -4,17 +4,13 @@ import { restaurantList } from "../Config";
 //default import
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
-
+import { Link } from "react-router-dom";
+import { filterData } from "../utils/helper";
 //components will be rerendered whenever the state and props are changed
 //hooks-normal js function
 //useState-react will keep track on the varible and update
 //useEffect-
-function filterData(searchText, restaurants) {
-  const filterDatas = restaurants.filter((restaurant) =>
-    restaurant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase())
-  );
-  return filterDatas;
-}
+
 const Body = () => {
   // const a="name" in js
   // in react local variable shoulbe created like --> const[a]=useState("name")
@@ -34,7 +30,7 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.89960&lng=80.22090&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+    //console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
     setAllRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
@@ -66,7 +62,9 @@ const Body = () => {
       <div className="body-list">
         {filteredRestaurants.map((res) => {
           // console.log(res.info);
-          return <RestaurantCard key={res.info.id} {...res.info} />;
+          return (
+            <Link to={"/restaurant/"+res.info.id} key={res.info.id}><RestaurantCard {...res.info} /></Link>
+          )
         })}
       </div>
     </>
@@ -74,3 +72,5 @@ const Body = () => {
 };
 
 export default Body;
+
+// React is the single page application..

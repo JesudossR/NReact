@@ -1,26 +1,33 @@
-.header{
-    display: flex;
-    justify-content:space-between;
-    margin:10px;
-    border: 1px solid black;
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px solid black;
 }
-.nav-lists ul{
-    list-style-type: none;
-    display: flex;
+.nav-lists ul {
+  list-style-type: none;
+  display: flex;
 }
-.nav-lists ul li{
-    padding: 10px;
+.nav-lists ul li {
+  padding: 10px;
 }
-.body-list{
-    display:flex
-
+.body-list {
+  display: flex;
+  flex-wrap: wrap;
 }
-.card img{
-    width:100%;
+.card img {
+  width: 100%;
 }
-.card{
-    width: 200;
-    margin: 10px;
-    border: 1px solid black;
-    padding: 10px;
+.card {
+  width: 200;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.shimmer-card {
+  width: 150px;
+  height: 200px;
+  margin: 10;
+  background-color: rgb(209, 209, 209);
+  border: 1px solid black;
 }
