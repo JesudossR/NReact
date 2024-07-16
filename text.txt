@@ -14,3 +14,7 @@ when using utilities it will be more easy to check the error whenever it occurs 
 3.Function components
 
 it is a function which returns the jsx.
+
+4.useEffect
+
+[]=>if we put empty dependency array then the useEffect will be triggred only once.

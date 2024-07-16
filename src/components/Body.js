@@ -6,6 +6,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/helper";
+import useOnline from "../utils/useOnline";
 //components will be rerendered whenever the state and props are changed
 //hooks-normal js function
 //useState-react will keep track on the varible and update
@@ -33,6 +34,11 @@ const Body = () => {
     //console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
     setAllRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+  }
+
+  const isOnline = useOnline();
+  if (!isOnline) {
+    return <h1>offline ,check connection </h1>
   }
 
   if (!filteredRestaurants) return <h1>Not found</h1>
